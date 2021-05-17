@@ -10,8 +10,14 @@ namespace RSA
     {
         static void Main(string[] args)
         {
-            RSAController controller = new RSAController();
-            controller.Controller();
+
+            for(int i = 0; i< 200;i++)
+            {
+                RSAController controller = new RSAController();
+                controller.Controller();
+            }
+
+            Console.ReadKey();
         }
     }
 }
